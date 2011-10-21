@@ -1,9 +1,9 @@
-var daap = require('daap');
-var Song = require('song').Song;
+var daap = require('../lib/daap');
+var Song = require('../lib/song').Song;
 
 daap.createServer({
   advertise:true,
   songs: [new Song({
-          file: 'cancion.mp3'
+          file: 'clip.mp3'
         })]
-}).listen(36850);
+}).listen(3689);
